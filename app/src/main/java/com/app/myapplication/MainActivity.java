@@ -62,13 +62,10 @@ public class MainActivity extends AppCompatActivity {
      * @return
      */
     public Bitmap getBarCodeWithoutPadding(String contents){
-
         int width = 100;
         int widthMax = 150;
         int heightExpect = 50;
-
         int realWidth = getBarCodeNoPaddingWidth(width,contents,widthMax);
-
         return syncEncodeBarcode(contents, realWidth, heightExpect,0);
     }
 
